@@ -1,0 +1,108 @@
+{
+  "_version": "1.66.0",
+  "sap.app": {
+    "id": "com.infy.aim",
+    "type": "application",
+    "ach": "infy-aim-2",
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "i18n": "i18n/i18n.properties"
+  },
+  "sap.ui": {
+    "fullWidth": true,
+    "deviceTypes": {
+      "desktop": true,
+      "phone": true,
+      "tablet": true
+    },
+    "supportedThemes": ["sap_horizon_dark", "sap_fiori_3_dark", "sap_belize"],
+    "fullWidth": true,
+    "technology": "UI5"
+  },
+
+  "sap.ui5": {
+    "dependencies": {
+      "minUI5Version": "1.129",
+      "libs": {
+        "sap.ui.core": {},
+        "sap.m": {},
+        "sap.ui.layout": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+
+    "rootView": {
+      "id": "idRootView",
+      "viewName": "com.infy.aim.view.App",
+      "type": "XML"
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewPath": "com.infy.aim.view",
+        "viewType": "XML",
+        "controlId": "idAppCon"
+      },
+      "routes": [
+        {
+          "pattern": "",
+          "name": "marvels",
+          "target": ["captain", "america"]
+        },
+        {
+          "pattern": "heroDetail/{marvelHeroes}",
+          "name": "hero",
+          "target": ["captain", "strange"]
+        },
+        {
+          "pattern": "supplier/{superheroes}/",
+          "name": "ironman",
+          "target": ["captain", "iron"]
+        }
+      ],
+      "targets": {
+        "captain": {
+          "viewId": "idView1",
+          "viewName": "View1",
+          "controlAggregation": "masterPages"
+        },
+        "america": {
+          "viewId": "idEmpty",
+          "viewName": "Empty",
+          "controlAggregation": "detailPages"
+        },
+        "strange": {
+          "viewId": "idView2",
+          "viewName": "View2",
+          "controlAggregation": "detailPages"
+        },
+        "iron": {
+          "viewId": "idview3",
+          "viewName": "View3",
+          "controlAggregation": "detailPages"
+        }
+      }
+    },
+
+    "models": {
+      "": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/mockdata/marvel.json",
+        "preload": false
+      },
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleUrl": "i18n/i18n.properties"
+        },
+        "preload": true
+      }
+    }
+  }
+}

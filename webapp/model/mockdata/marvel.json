@@ -1,0 +1,328 @@
+{
+  "marvelHeroes": [
+    {
+      "heroName": "Iron Man",
+      "power": "Genius-level intellect, Powered armor suit",
+      "budget": "200000000",
+      "currency": "USD",
+      "imageURL": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2013/04/25/20/ironman.marvel.jpg",
+      "villain": "Thanos",
+      "movieName": "Avengers: Infinity War"
+    },
+    {
+      "heroName": "Thor",
+      "power": "God of Thunder, Control over lightning, Mjolnir",
+      "budget": "180000000",
+      "currency": "USD",
+      "imageURL": "https://example.com/thor.jpg",
+      "villain": "Hela",
+      "movieName": "Thor: Ragnarok"
+    },
+    {
+      "heroName": "Black Widow",
+      "power": "Expert spy, Master martial artist",
+      "budget": "150000000",
+      "currency": "USD",
+      "imageURL": "https://example.com/blackwidow.jpg",
+      "villain": "Taskmaster",
+      "movieName": "Black Widow"
+    },
+    {
+      "heroName": "Spider-Man",
+      "power": "Spider sense, Superhuman strength, Web-slinging",
+      "budget": "175000000",
+      "currency": "USD",
+      "imageURL": "https://example.com/spiderman.jpg",
+      "villain": "Green Goblin",
+      "movieName": "Spider-Man: No Way Home"
+    },
+    {
+      "heroName": "Doctor Strange",
+      "power": "Mystic arts, Reality manipulation",
+      "budget": "165000000",
+      "currency": "USD",
+      "imageURL": "https://example.com/drstrange.jpg",
+      "villain": "Dormammu",
+      "movieName": "Doctor Strange"
+    },
+    {
+      "heroName": "Black Panther",
+      "power": "Enhanced strength, Vibranium suit",
+      "budget": "200000000",
+      "currency": "USD",
+      "imageURL": "https://example.com/blackpanther.jpg",
+      "villain": "Killmonger",
+      "movieName": "Black Panther"
+    },
+    {
+      "heroName": "Captain Marvel",
+      "power": "Superhuman strength, Energy projection",
+      "budget": "152000000",
+      "currency": "USD",
+      "imageURL": "https://example.com/captainmarvel.jpg",
+      "villain": "Yon-Rogg",
+      "movieName": "Captain Marvel"
+    }
+  ],
+
+  "superheroes": [
+    {
+      "id": "o",
+      "name": "Iron Man",
+      "realName": "Tony Stark",
+      "powers": ["Genius Intellect", "Advanced Technology", "Flight"],
+      "equipment": {
+        "primary": "Mark 85 Armor",
+        "secondary": "Arc Reactor",
+        "specialWeapons": ["Repulsors", "Unibeam"]
+      },
+      "stats": {
+        "strength": 85,
+        "intelligence": 100,
+        "speed": 90,
+        "durability": 85
+      }
+    },
+    {
+      "id": "1",
+      "name": "Thor",
+      "realName": "Thor Odinson",
+      "powers": ["Lightning Control", "Flight", "Super Strength"],
+      "equipment": {
+        "primary": "Mjolnir",
+        "secondary": "Stormbreaker",
+        "specialWeapons": ["Lightning", "Wind Control"]
+      },
+      "stats": {
+        "strength": 100,
+        "intelligence": 70,
+        "speed": 85,
+        "durability": 95
+      }
+    },
+    {
+      "id": "2",
+      "name": "Captain America",
+      "realName": "Steve Rogers",
+      "powers": ["Peak Human Strength", "Master Tactician", "Enhanced Agility"],
+      "equipment": {
+        "primary": "Vibranium Shield",
+        "secondary": "Combat Suit",
+        "specialWeapons": ["Shield Throw", "Hand-to-Hand Combat"]
+      },
+      "stats": {
+        "strength": 88,
+        "intelligence": 90,
+        "speed": 85,
+        "durability": 80
+      }
+    },
+    {
+      "id": "3",
+      "name": "Hulk",
+      "realName": "Bruce Banner",
+      "powers": [
+        "Superhuman Strength",
+        "Regeneration",
+        "Unlimited Strength Growth"
+      ],
+      "equipment": {
+        "primary": "Reinforced Pants",
+        "secondary": "None",
+        "specialWeapons": ["Thunder Clap", "Ground Pound"]
+      },
+      "stats": {
+        "strength": 100,
+        "intelligence": 95,
+        "speed": 75,
+        "durability": 100
+      }
+    },
+    {
+      "id": "4",
+      "name": "Black Widow",
+      "realName": "Natasha Romanoff",
+      "powers": ["Master Spy", "Expert Martial Artist", "Master Strategist"],
+      "equipment": {
+        "primary": "Widow's Bite",
+        "secondary": "Batons",
+        "specialWeapons": ["Grappling Hook", "Widow's Line"]
+      },
+      "stats": {
+        "strength": 65,
+        "intelligence": 90,
+        "speed": 85,
+        "durability": 60
+      }
+    },
+    {
+      "id": "5",
+      "name": "Hawkeye",
+      "realName": "Clint Barton",
+      "powers": ["Master Archer", "Expert Marksman", "Tactical Analysis"],
+      "equipment": {
+        "primary": "Compound Bow",
+        "secondary": "Trick Arrows",
+        "specialWeapons": ["Explosive Arrows", "Grappling Arrows"]
+      },
+      "stats": {
+        "strength": 65,
+        "intelligence": 85,
+        "speed": 80,
+        "durability": 60
+      }
+    },
+    {
+      "id": "6",
+      "name": "Doctor Strange",
+      "realName": "Stephen Strange",
+      "powers": ["Mystic Arts", "Time Manipulation", "Dimensional Travel"],
+      "equipment": {
+        "primary": "Eye of Agamotto",
+        "secondary": "Cloak of Levitation",
+        "specialWeapons": ["Mystic Shields", "Eldritch Magic"]
+      },
+      "stats": {
+        "strength": 65,
+        "intelligence": 95,
+        "speed": 75,
+        "durability": 70
+      }
+    },
+    {
+      "id": "7",
+      "name": "Black Panther",
+      "realName": "T'Challa",
+      "powers": ["Enhanced Strength", "Enhanced Speed", "Vibranium Connection"],
+      "equipment": {
+        "primary": "Vibranium Suit",
+        "secondary": "Kimoyo Beads",
+        "specialWeapons": ["Energy Daggers", "Sound Absorption"]
+      },
+      "stats": {
+        "strength": 85,
+        "intelligence": 95,
+        "speed": 90,
+        "durability": 85
+      }
+    }
+  ],
+
+  "missions": [
+    {
+      "missionId": "8",
+      "title": "Battle of New York",
+      "threat": "Chitauri Invasion",
+      "participants": ["Iron Man", "Thor", "Hulk", "Black Widow"],
+      "outcome": "Success",
+      "casualties": {
+        "civilian": 74,
+        "heroes": 0,
+        "villains": "Unknown"
+      },
+      "damage": {
+        "estimatedCost": "$160B",
+        "affectedAreas": ["Manhattan", "Brooklyn"]
+      }
+    }
+  ],
+  "villains": {
+    "primary": [
+      {
+        "name": "Thanos",
+        "origin": "Titan",
+        "threatLevel": "Omega",
+        "defeats": 1,
+        "victories": 1,
+        "weapons": ["Infinity Gauntlet", "Double-Edged Sword"],
+        "allies": ["Black Order", "Chitauri"]
+      }
+    ],
+    "secondary": [
+      {
+        "name": "Ultron",
+        "origin": "Earth",
+        "threatLevel": "Alpha",
+        "defeats": 1,
+        "victories": 0,
+        "weapons": ["Energy Beam", "Robotic Army"],
+        "allies": ["Ultron Sentries"]
+      }
+    ]
+  },
+  "locations": {
+    "bases": [
+      {
+        "name": "Avengers Tower",
+        "location": "Manhattan",
+        "security": "Level 10",
+        "facilities": ["Training Room", "Medical Bay", "Research Lab"]
+      },
+      {
+        "name": "Avengers Compound",
+        "location": "Upstate New York",
+        "security": "Level 10",
+        "facilities": ["Hangar", "Living Quarters", "Training Ground"]
+      }
+    ]
+  },
+
+  "marvelSeries": [
+    {
+      "heroName": "HULK",
+      "weapon": "Angry",
+      "favoriteMovie": "MarvelStart",
+      "villain": "Red Skull",
+      "rating": 5,
+      "isGood": false
+    },
+    {
+      "heroName": "Spiderman",
+      "weapon": "Fast",
+      "favoriteMovie": "END Game",
+      "villain": "No one",
+      "rating": 3,
+      "isGood": true
+    },
+    {
+      "heroName": "Captain America",
+      "weapon": "Broken Shield",
+      "favoriteMovie": "Infinity War",
+      "villain": "Thanos",
+      "rating": 4.7,
+      "isGood": true
+    },
+    {
+      "heroName": "Vision",
+      "weapon": "Mjolnir",
+      "favoriteMovie": "Endgame",
+      "villain": "Thanos",
+      "rating": 5,
+      "isGood": true
+    },
+    {
+      "heroName": "Doctor Strange",
+      "weapon": "time control",
+      "favoriteMovie": "Winter Soldier",
+      "villain": "Hydra",
+      "rating": 4.6,
+      "isGood": false
+    },
+    {
+      "heroName": "Iron Man",
+      "weapon": "Shield",
+      "favoriteMovie": "Age of Ultron",
+      "villain": "Ultron",
+      "rating": 4.5,
+      "isGood": true
+    },
+    {
+      "heroName": "Captain Marvel",
+      "weapon": "Combat Knife",
+      "favoriteMovie": "First Avenger",
+      "villain": "Red Skull",
+      "rating": 4.4,
+      "isGood": false
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+/* General styles for the application */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Style for the list */
+.sapUiResponsiveMargin {
+    margin: 1rem;
+}
+
+/* Style for buttons */
+.sapMBtn {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Style for the search field */
+#idSearch {
+    margin-bottom: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .sapUiResponsiveMargin {
+        margin: 0.5rem;
+    }
+}
+
+

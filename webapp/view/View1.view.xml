@@ -1,0 +1,97 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    controllerName="com.infy.aim.controller.View1"
+>
+    <Page title="Heroes">
+        <headerContent>
+            <Button
+                icon="sap-icon://action"
+                press="onNext"
+                tooltip="nextView"
+            />
+        </headerContent>
+        <content>
+            <SearchField
+                id="idSearch"
+                width="100%"
+                class="sapUiResponsiveMargin"
+                search="onSearch"
+                liveChange="onSearch"
+            />
+
+            <List
+                class="sapUiResponsiveMargin"
+                id="idMyList"
+                items="{path: '/marvelHeroes'}"
+                selectionChange="onItemSelect"
+                mode="SingleSelectMaster"
+                delete="onItemDelete"
+            >
+                <headerToolbar>
+                    <Toolbar>
+                        <ToolbarSpacer />
+
+                        <Button
+                            icon="sap-icon://delete"
+                            press="onItemsDelete"
+                            tooltip="Delete the selected items"
+                        />
+                    </Toolbar>
+                </headerToolbar>
+
+                <items>
+                    <ObjectListItem
+                        intro="{heroName}"
+                        title="{movieName}"
+                        number="{budget}"
+                        numberUnit="{currency}"
+                        icon="{imageURL}"
+                    />
+
+                    <!-- <DisplayListItem label="Captain America" value="The First Avenger"></DisplayListItem>
+<StandardListItem title="IRON MAN" description="Iron Man is the superhero persona &quot;Tony&quot;Stark" icon="https://cdn4.iconfinder.com/data/icons/ironman_lin/512/ironman_III.png">
+
+</StandardListItem>
+<InputListItem >
+  <HBox >
+  <Text text= "Which is favorite Dailogue"></Text>
+  <Input width="60%"></Input>
+</HBox>
+</InputListItem>
+
+<CustomListItem >
+<HBox class="sapUiTinyMargin">
+<Text text= "Self Made Avenger ?" class="sapUiTinyMargin">
+
+</Text>
+<Switch customTextOff="Yes" customTextOn="No" ></Switch>
+</HBox>
+</CustomListItem>
+
+<ObjectListItem title="Avengers" intro="Avenger End Game" number="3000" numberUnit="Phase1" icon="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_FMjpg_UX1000_.jpg">
+
+<firstStatus>
+<ObjectStatus text="5 star" state="Success"></ObjectStatus>
+</firstStatus>
+
+<attributes>
+<ObjectAttribute text="Thor, SpiderMan, IronMan, Hulk" title="Charchaters"></ObjectAttribute>
+</attributes> 
+
+</ObjectListItem>
+<FeedListItem
+    sender="Peter Howland" 
+    text="New movie is coming"  
+    info="Realse Date"
+    timestamp="25 Dec 2025" 
+    icon="https://www.bollywoodhungama.com/wp-content/uploads/2021/12/Spider-Man-No-Way-Home-Box-Office-Spider-Man-No-Way-Home-breaks-records-becomes-first-film-since-2019-to-cross-USD-1-billion-2.jpeg">
+</FeedListItem>
+<ActionListItem text="Upcoming Movies">
+
+</ActionListItem> -->
+                </items>
+            </List>
+        </content>
+    </Page>
+</mvc:View>

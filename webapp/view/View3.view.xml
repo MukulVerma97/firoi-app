@@ -1,0 +1,11 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    controllerName="com.infy.aim.controller.View3"
+>
+    <Page
+        title="View 3 - The supplier Data"
+        showNavButton="true"
+        navButtonPress="onBack"
+    />
+</mvc:View>

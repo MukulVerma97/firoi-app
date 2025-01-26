@@ -1,0 +1,30 @@
+<core:FragmentDefinition
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+>
+    <Select items="{/marvelHeroes}">
+        <items>
+            <core:Item
+                key="{villain}"
+                text="{villain}"
+            />
+        </items>
+    </Select>
+    <ComboBox items="{/marvelHeroes}">
+        <items>
+            <core:Item
+                key="{villain}"
+                text="{villain}"
+            />
+        </items>
+    </ComboBox>
+    <MultiComboBox items="{/marvelHeroes}">
+        <items>
+            <core:Item
+                key="{villain}"
+                text="{villain}"
+            />
+        </items>
+    </MultiComboBox>
+</core:FragmentDefinition>

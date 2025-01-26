@@ -1,0 +1,78 @@
+<core:FragmentDefinition
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+>
+    <Table
+        id="idTable"
+        mode="SingleSelectLeft"
+        items="{/superheroes}"
+        itemPress="onItemPress"
+    >
+        <headerToolbar>
+            <Toolbar>
+                <ToolbarSpacer />
+
+                <Button
+                    icon="sap-icon://filter"
+                    tooltip="filter data"
+                    press="onFilter"
+                />
+            </Toolbar>
+        </headerToolbar>
+
+        <columns>
+            <Column>
+                <header>
+                    <Label text="Hero Id" />
+                </header>
+            </Column>
+            <Column>
+                <header>
+                    <Label text="Hero Name" />
+                </header>
+            </Column>
+            <Column>
+                <header>
+                    <Label text="Real Name" />
+                </header>
+            </Column>
+            <Column minScreenWidth="Tablet">
+                <header>
+                    <Label text="Powers" />
+                </header>
+            </Column>
+            <Column minScreenWidth="Tablet">
+                <header>
+                    <Label text="Equipment" />
+                </header>
+            </Column>
+            <Column>
+                <header>
+                    <Label text="Strength" />
+                </header>
+            </Column>
+        </columns>
+
+        <items>
+            <ColumnListItem type="Navigation">
+                <cells>
+                    <Text text="{id}" />
+                    <Text text="{name}" />
+                    <Input
+                        value="{realName}"
+                        showValueHelp="true"
+                        valueHelpRequest="onF4Help"
+                    />
+                    <Text text="{powers/0}" />
+
+                    <Text text="{equipment/primary}" />
+                    <VBox>
+                        <Text text="{stats/strength}" />
+                        <Text text="Intelligence : {stats/intelligence}" />
+                    </VBox>
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
+</core:FragmentDefinition>

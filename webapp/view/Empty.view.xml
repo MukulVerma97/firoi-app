@@ -1,0 +1,16 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    controllerName="com.infy.aim.controller.Empty"
+>
+    <Page title="Empty View">
+        <Image
+            src="https://t4.ftcdn.net/jpg/03/73/92/35/360_F_373923537_fEL66rwQtOPubK0tye1SOFjWHRM99Eqe.jpg"
+            width="100%"
+            height="100%"
+            densityAware="false"
+            backgroundSize="cover"
+            backgroundPosition="center"
+        />
+    </Page>
+</mvc:View>

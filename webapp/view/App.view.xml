@@ -1,0 +1,19 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+    controllerName="com.infy.aim.controller.App"
+>
+    <!--   
+  <App id="idAppCon">
+  
+  
+  
+  
+  </App> -->
+
+    <SplitApp
+        id="idAppCon"
+        class="sapUiResponsiveMargin"
+    />
+</mvc:View>
